@@ -1,0 +1,9 @@
+{% extends "main/base.html" %}
+{% block title %}Подробнее Mirage{% endblock %}
+{% block content %}
+{% load static %}
+    <div class="karta_info">
+        <img class="background_foto_img" src="/static/{{ map.image_url }}" width="670" height="890">
+         <p class="description">{{ map.description }}</p>
+    </div>
+{% endblock %}

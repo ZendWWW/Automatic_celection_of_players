@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchmaking</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+         <header>
+             <div class="faceit_logo">
+                <img class="faceit_logo_img" src="{% static 'css/images/img.png' %} " width="53" height="45">
+            </div>
+            <div class="logo_cs2">
+               <img class="logo_cs2_img" src="{% static 'css/images/img_1.png' %}" width="200" height="101">
+            </div>
+            <a class="header_title" href="{% url 'home' %}">Матчмейкинг</a>
+            <div class="shield">
+                <img class="shield_img" src="{% static 'css/images/img_2.png' %}" width="89" height="89">
+            </div>
+        </header>
+         <main class="main">
+             {% block content %}{% endblock %}
+        </main>
+       </body>
+</html>

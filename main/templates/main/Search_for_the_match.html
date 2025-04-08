@@ -1,0 +1,29 @@
+{% extends "main/base.html" %}
+{% block title %}Подробнее Mirage{% endblock %}
+{% block content %}
+{% load static %}
+<a class="search_match_btn" href='#'>ПОИСК МАТЧА</a>
+ <div class="center-wrapper">
+  <!-- Карточка DUST2 -->
+  <div class="map-card">
+    <img src="{% static 'css/images/img_17.png' %}" alt="Dust2">
+    <p>DUST2</p>
+  </div>
+
+  <!-- Карточка MIRAGE -->
+  <div class="map-card">
+    <img src="{% static 'css/images/img_18.png' %}" alt="Ancient">
+    <p>ANCIENT</p>
+  </div>
+
+  <!-- Карточка NUKE -->
+  <div class="map-card nuke">
+    <img src="{% static 'css/images/img_16.png' %}" alt="Nuke">
+    <p>NUKE</p>
+  </div>
+</div>
+<div class="map-counter">
+    Всего карт: 3
+</div>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "main/base.html" %}
+{% block title %}Меню выбора карт{% endblock %}
+{% block content %}
+{% load static %}
+ <div class="search-container">
+    <button class="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </button>
+    <input type="text" placeholder="Поиск карт" class="search-input" id="mapSearch" />
+    <div class="search-results" id="searchResults"></div>
+</div>
+    <div class="cs_foto">
+        <div class="cs1_foto">
+                <img class="cs1_foto_img" src="{% static 'css/images/img_3.png' %}" width="231" height="320">
+            </div>
+    <div class="cs1_foto">
+                <img class="cs1_foto_img" src="{% static 'css/images/img_4.png' %}" width="231" height="320">
+            </div>
+    <div class="cs1_foto cs_sredne">
+                <img class="cs1_foto_img" src="{% static 'css/images/img_5.png' %}" width="231" height="350">
+            </div>
+    <div class="cs1_foto">
+                <img class="cs1_foto_img" src="{% static 'css/images/img_6.png' %}" width="231" height="320">
+            </div>
+    <div class="cs1_foto">
+                <img class="cs1_foto_img" src="{% static 'css/images/img_7.png' %}" width="231" height="320">
+            </div>
+    </div>
+    <div class="map_container">
+        <div class="map_container_up">
+            <span class="match_5_v_5">ТИП МАТЧА (5V5 MATCH)</span>
+            <a class="match_btn" href='servises/Search_for_the_match/'>ИГРАТЬ</a>
+            <span class="map_7">КАРТЫ (7/7)</span>
+        </div>
+        <div class="map_container_down">
+            <div class="karta_map">
+                <img class="map_foto_img" src="{% static 'css/images/img_8.png' %}" width="117" height="130">
+                <span class="map_name">MIRAGE</span>
+                <a class="about_map" href="{% url 'Map_mirage_info_page' map_id=1 %}">ПОДРОБНЕЕ</a>
+                <a class="add_map" href="#">ДОБАВИТЬ</a>
+            </div>
+            <div class="karta_map">
+                <img class="map_foto_img" src="{% static 'css/images/img_9.png' %}" width="117" height="130">
+                <span class="map_name">NUKE</span>
+                <a class="about_map" href="{% url 'Map_mirage_info_page' map_id=2 %}">ПОДРОБНЕЕ</a>
+                <a class="add_map" href="#">ДОБАВИТЬ</a>
+            </div>
+            <div class="karta_map">
+                <img class="map_foto_img" src="{% static 'css/images/img_10.png' %}" width="117" height="130">
+                <span class="map_name">DUST2</span>
+                <a class="about_map" href="{% url 'Map_mirage_info_page' map_id=3 %}">ПОДРОБНЕЕ</a>
+                <a class="add_map" href="#">ДОБАВИТЬ</a>
+            </div>
+            <div class="karta_map">
+                <img class="map_foto_img" src="{% static 'css/images/img_11.png' %}" width="117" height="130">
+                <span class="map_name">ANCIENT</span>
+                <a class="about_map" href="{% url 'Map_mirage_info_page' map_id=4 %}">ПОДРОБНЕЕ</a>
+                <a class="add_map" href="#">ДОБАВИТЬ</a>
+            </div>
+            <div class="karta_map">
+                <img class="map_foto_img" src="{% static 'css/images/img_12.png' %}" width="117" height="130">
+                <span class="map_name">INFERNO</span>
+                <a class="about_map" href="{% url 'Map_mirage_info_page' map_id=5 %}">ПОДРОБНЕЕ</a>
+                <a class="add_map" href="#">ДОБАВИТЬ</a>
+            </div>
+            <div class="karta_map">
+                <img class="map_foto_img" src="{% static 'css/images/img_13.png' %}" width="117" height="130">
+                <span class="map_name">ANUBIS</span>
+                <a class="about_map" href="{% url 'Map_mirage_info_page' map_id=6 %}">ПОДРОБНЕЕ</a>
+                <a class="add_map" href="#">ДОБАВИТЬ</a>
+            </div>
+            <div class="karta_map">
+                <img class="map_foto_img" src="{% static 'css/images/img_14.png' %}" width="117" height="130">
+                <span class="map_name">TRAIN</span>
+                <a class="about_map" href="{% url 'Map_mirage_info_page' map_id=7 %}">ПОДРОБНЕЕ</a>
+                <a class="add_map" href="#">ДОБАВИТЬ</a>
+            </div>
+        </div>
+    </div>
+<script src="{% static 'js/js.js' %}"></script>
+{% endblock %}
