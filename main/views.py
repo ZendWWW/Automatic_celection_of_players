@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-
 #def base(request):
 #return render(request, 'main/base.html')
 def Map_selection_page(request):
